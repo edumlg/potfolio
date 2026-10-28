@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Eduardo Morillas Rodríguez</title>
+  <meta name="description" content="Contacta con Eduardo Morillas Rodríguez para proyectos de desarrollo web, consultoría en inteligencia artificial o prácticas profesionales en ML Systems.">
+  <link rel="canonical" href="https://edumlg.github.io/contacto.html">
+  <meta property="og:title" content="Contacto | Eduardo Morillas Rodríguez">
+  <meta property="og:description" content="Contacta con Eduardo Morillas Rodríguez para proyectos de desarrollo web, consultoría en inteligencia artificial o prácticas profesionales en ML Systems.">
+  <meta property="og:image" content="https://edumlg.github.io/img/og-contacto.jpg">
+  <meta property="og:url" content="https://edumlg.github.io/contacto.html">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;display=swap">
+</head>
+<body>
+
+  <!-- Enlace de salto accesible al contenido principal -->
+  <a href="#contenido">Saltar al contenido</a>
+
+  <!-- ===================================================================
+       CABECERA DEL SITIO (Compartida en todas las páginas)
+       - Logo SVG enlazado con img
+       - Nombre y frase descriptiva
+       - Elemento nav con ul y enlaces a las páginas
+       =================================================================== -->
+  <header>
+    <img src="img/logo.svg" alt="Logotipo de Eduardo Morillas Rodríguez" width="48" height="48">
+    <p><strong>Eduardo Morillas Rodríguez</strong></p>
+    <p>Estudiante de 5º año del Doble Grado en Ingeniería Matemática e Informática | ML Systems &amp; LLMs</p>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><p><a href="index.html">Inicio</a></p></li>
+        <li><p><a href="proyectos.html">Proyectos</a></p></li>
+        <li><p><a href="contacto.html">Contacto</a></p></li>
+        <li><p><a href="sobre-mi.html">Sobre mí</a></p></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================================================================
+       CONTENIDO PRINCIPAL: FORMULARIO DE CONTACTO ACCESIBLE
+       =================================================================== -->
+  <main id="contenido" tabindex="-1">
+
+    <h1>Contacto</h1>
+
+    <form method="post" action="#">
+
+      <!-- GRUPO 1: TUS DATOS -->
+      <fieldset>
+        <legend>Tus datos</legend>
+
+        <p>
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="60" autocomplete="name">
+        </p>
+
+        <p>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </p>
+
+        <p>
+          <label for="empresa">Empresa u organización (opcional):</label>
+          <input type="text" id="empresa" name="empresa" autocomplete="organization">
+        </p>
+      </fieldset>
+
+      <!-- GRUPO 2: TU PROYECTO -->
+      <fieldset>
+        <legend>Tu proyecto</legend>
+
+        <p>
+          <label for="tipo-proyecto">Tipo de proyecto:</label>
+          <select id="tipo-proyecto" name="tipo_proyecto" required>
+            <option value="">Elige un tipo</option>
+            <optgroup label="Desarrollo Web">
+              <option value="web-corporativa">Sitio web corporativo</option>
+              <option value="tienda-online">Tienda online / E-commerce</option>
+              <option value="web-app">Aplicación web a medida</option>
+            </optgroup>
+            <optgroup label="Aplicaciones Móviles (App)">
+              <option value="app-nativa">App móvil nativa (iOS / Android)</option>
+              <option value="app-multiplataforma">App multiplataforma</option>
+            </optgroup>
+            <optgroup label="Otro">
+              <option value="ia-ml">Solución de Inteligencia Artificial / ML</option>
+              <option value="consultoria">Consultoría técnica y auditoría</option>
+            </optgroup>
+          </select>
+        </p>
+
+        <p><strong>Modalidad:</strong></p>
+        <p>
+          <input type="radio" id="modalidad-remoto" name="modalidad" value="remoto" checked>
+          <label for="modalidad-remoto">Remoto</label>
+        </p>
+        <p>
+          <input type="radio" id="modalidad-presencial" name="modalidad" value="presencial">
+          <label for="modalidad-presencial">Presencial</label>
+        </p>
+        <p>
+          <input type="radio" id="modalidad-hibrido" name="modalidad" value="hibrido">
+          <label for="modalidad-hibrido">Híbrido</label>
+        </p>
+
+        <p><strong>Servicios:</strong></p>
+        <p>
+          <input type="checkbox" id="servicio-diseno" name="servicios" value="diseno">
+          <label for="servicio-diseno">Diseño</label>
+        </p>
+        <p>
+          <input type="checkbox" id="servicio-frontend" name="servicios" value="frontend">
+          <label for="servicio-frontend">Front-end</label>
+        </p>
+        <p>
+          <input type="checkbox" id="servicio-backend" name="servicios" value="backend">
+          <label for="servicio-backend">Back-end</label>
+        </p>
+
+        <p>
+          <label for="fecha-inicio">Fecha de inicio:</label>
+          <input type="date" id="fecha-inicio" name="fecha_inicio" required min="2026-10-14">
+        </p>
+
+        <p>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required maxlength="500" rows="5" aria-describedby="ayuda-mensaje"></textarea>
+        </p>
+        <p id="ayuda-mensaje">Cuéntame qué necesitas y para cuándo</p>
+      </fieldset>
+
+      <!-- GRUPO 3: CÓMO TE RESPONDO -->
+      <fieldset>
+        <legend>Cómo te respondo</legend>
+
+        <p><strong>Preferencia de respuesta:</strong></p>
+        <p>
+          <input type="radio" id="respuesta-email" name="respuesta" value="email" checked>
+          <label for="respuesta-email">Email</label>
+        </p>
+        <p>
+          <input type="radio" id="respuesta-telefono" name="respuesta" value="telefono">
+          <label for="respuesta-telefono">Teléfono</label>
+        </p>
+
+        <p>
+          <label for="telefono">Teléfono (opcional):</label>
+          <input type="tel" id="telefono" name="telefono" pattern="[6-9][0-9]{8}" title="Debe contener exactamente 9 cifras que empiecen por 6, 7, 8 o 9, sin espacios ni prefijos" autocomplete="tel">
+        </p>
+
+        <p>
+          <input type="checkbox" id="privacidad" name="privacidad" required>
+          <label for="privacidad">Acepto la política de privacidad</label>
+        </p>
+      </fieldset>
+
+      <!-- BOTONES DE ACCIÓN -->
+      <p>
+        <button type="submit">Enviar mensaje</button>
+      </p>
+      <p>
+        <button type="reset">Borrar</button>
+      </p>
+
+    </form>
+
+  </main>
+
+  <!-- ===================================================================
+       PIE DE PÁGINA (Idéntico en todas las páginas)
+       =================================================================== -->
+  <footer>
+    <address>
+      <p>Contacto: <a href="mailto:edu.morillasrodriguez@gmail.com"><svg aria-hidden="true" fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> edu.morillasrodriguez@gmail.com</a></p>
+    </address>
+    <p>
+      <a href="https://github.com/edumlg" target="_blank" rel="noopener"><svg aria-hidden="true" fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> Perfil de GitHub de Eduardo Morillas</a>
+    </p>
+    <p>
+      <a href="https://www.linkedin.com/in/eduardo-m-b5716b252" target="_blank" rel="noopener"><svg aria-hidden="true" fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg> Perfil de LinkedIn de Eduardo Morillas</a>
+    </p>
+    <p>
+      <small>&copy; 2026 Eduardo Morillas Rodríguez. Todos los derechos reservados.</small>
+    </p>
+  </footer>
+
+</body>
+</html>

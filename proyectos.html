@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyectos | Eduardo Morillas Rodríguez</title>
+  <meta name="description" content="Catálogo de proyectos de Eduardo Morillas Rodríguez en desarrollo web, análisis de datos con Python y arquitecturas de Big Data y Machine Learning.">
+  <link rel="canonical" href="https://edumlg.github.io/proyectos.html">
+  <meta property="og:title" content="Proyectos | Eduardo Morillas Rodríguez">
+  <meta property="og:description" content="Catálogo de proyectos de Eduardo Morillas Rodríguez en desarrollo web, análisis de datos con Python y arquitecturas de Big Data y Machine Learning.">
+  <meta property="og:image" content="https://edumlg.github.io/img/og-proyectos.jpg">
+  <meta property="og:url" content="https://edumlg.github.io/proyectos.html">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;display=swap">
+</head>
+<body>
+
+  <!-- Enlace de salto accesible al contenido principal -->
+  <a href="#contenido">Saltar al contenido</a>
+
+  <!-- ===================================================================
+       CABECERA DEL SITIO (Compartida en todas las páginas)
+       - Logo SVG enlazado con img
+       - Nombre y frase descriptiva
+       - Elemento nav con ul y enlaces a las páginas
+       =================================================================== -->
+  <header>
+    <img src="img/logo.svg" alt="Logotipo de Eduardo Morillas Rodríguez" width="48" height="48">
+    <p><strong>Eduardo Morillas Rodríguez</strong></p>
+    <p>Estudiante de 5º año del Doble Grado en Ingeniería Matemática e Informática | ML Systems &amp; LLMs</p>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><p><a href="index.html">Inicio</a></p></li>
+        <li><p><a href="proyectos.html">Proyectos</a></p></li>
+        <li><p><a href="contacto.html">Contacto</a></p></li>
+        <li><p><a href="sobre-mi.html">Sobre mí</a></p></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================================================================
+       CONTENIDO PRINCIPAL
+       =================================================================== -->
+  <main id="contenido" tabindex="-1">
+
+    <h1>Proyectos</h1>
+
+    <!-- Enlaces internos a las categorías de proyectos -->
+    <nav aria-label="Categorías de proyectos">
+      <ul>
+        <li><p><a href="#web">Desarrollo Web</a></p></li>
+        <li><p><a href="#programacion">Programación y Análisis de Datos</a></p></li>
+        <li><p><a href="#universidad">Inteligencia Artificial y Big Data</a></p></li>
+      </ul>
+    </nav>
+
+    <!-- ===============================================================
+         CATEGORÍA 1: DESARROLLO WEB
+         =============================================================== -->
+    <section id="web">
+      <h2>Desarrollo Web</h2>
+
+      <!-- Proyecto 1: EcoMap -->
+      <article class="proyecto" id="ecomap" data-anio="2024" data-tecnologia="Web">
+        <h3>EcoMap: Plataforma Web de Energías Renovables</h3>
+        <figure>
+          <img src="img/proyecto-ecomap.jpg" alt="Dashboard del proyecto EcoMap" width="1200" height="669" loading="lazy">
+          <figcaption>Recomendación de tecnología óptima (solar/eólica) y estimación de rendimiento energético</figcaption>
+        </figure>
+        <p>
+          Proyecto académico universitario de diseño y desarrollo de una plataforma web que evalúa parcelas de terreno y recomienda la tecnología energética óptima (solar o eólica). Incorpora predicción de rentabilidad y estimación de costes mediante modelos fundamentados en datos geoespaciales y energéticos. Aprendí a resolver problemas complejos integrando diversas fuentes de datos heterogéneas y optimizando algoritmos sobre una interfaz web intuitiva.
+        </p>
+        <p><strong>Tecnologías y herramientas utilizadas:</strong></p>
+        <ul>
+          <li><strong>Frontend y Maquetación:</strong> HTML5 semántico y CSS3 estructurado para interfaces analíticas y visualización de parcelas.</li>
+          <li><strong>Procesamiento Geoespacial:</strong> Python (GeoPandas, Shapely) para cálculo de irradiación solar, rosa de vientos y delimitación de parcelas catastrales.</li>
+          <li><strong>Modelado y Optimización:</strong> NumPy y SciPy para estimación de curvas de rentabilidad económica y amortización energética.</li>
+        </ul>
+      </article>
+
+      <!-- Proyecto 2: AeroMap (Proyecto en curso) -->
+      <article class="proyecto en-curso" id="aeromap" data-anio="2026" data-tecnologia="Deep Learning">
+        <h3>AeroMap: Estimación de Potencial Eólico (<mark>En curso</mark>)</h3>
+        <figure>
+          <img src="img/proyecto-aeromap.jpg" alt="Dashboard del proyecto AeroMap" width="1200" height="669" loading="lazy">
+          <figcaption>Estimación de potencial eólico con segmentación semántica U-Net y perfiles verticales de velocidad</figcaption>
+        </figure>
+        <p>
+          Proyecto en desarrollo enfocado en automatizar la estimación del potencial eólico real a alturas de buje comercial (80 m - 120 m) a partir de mediciones meteorológicas a ras de suelo (10 m), solventando las pérdidas provocadas por la rugosidad aerodinámica del terreno en regiones insulares como Aruba. El sistema implementa web scraping cartográfico autónomo para descargar mosaicos satelitales en cuadrículas 3x3, segmentación semántica multiclase con Deep Learning (arquitectura U-Net) sobre la escala Davenport-Wieringa, filtrado geométrico del sector de barlovento, corrección termodinámica de la densidad del aire y extrapolación mediante la ley de Prandtl sobre un dashboard geoespacial interactivo. He aprendido a conectar visión por computador, modelos físicos y teledetección satelital en una solución orientada a la transición energética.
+        </p>
+        <p><strong>Tecnologías y herramientas utilizadas:</strong></p>
+        <ul>
+          <li><strong>Deep Learning y Visión por Computador:</strong> PyTorch y Torchvision implementando segmentación semántica multiclase con arquitectura U-Net.</li>
+          <li><strong>Ingeniería de Datos y Extracción:</strong> Web scraping cartográfico asíncrono sobre teselas satelitales (Slippy Map Tiles XYZ, proyección WGS84) y procesamiento de imagen con PIL.</li>
+          <li><strong>Modelado Matemático y Físico:</strong> NumPy y SciPy para corrección termodinámica de densidad del aire y extrapolación logarítmica de viento (Ley de Prandtl).</li>
+          <li><strong>Visualización Geoespacial:</strong> Folium / Leaflet y Matplotlib para rosas de viento e interfaces interactivas de toma de decisiones.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ===============================================================
+         CATEGORÍA 2: PROGRAMACIÓN Y ANÁLISIS DE DATOS
+         =============================================================== -->
+    <section id="programacion">
+      <h2>Programación y Análisis de Datos</h2>
+
+      <!-- Proyecto 3: Open Data Accidentalidad -->
+      <article class="proyecto" id="accidentalidad-madrid" data-anio="2023" data-tecnologia="Python">
+        <h3>Open Data: Análisis de la Accidentalidad en Madrid</h3>
+        <figure>
+          <img src="img/proyecto-accidentalidad.jpg" alt="Dashboard de accidentalidad en Madrid" width="1200" height="669" loading="lazy">
+          <figcaption>Minería de datos, mapa de calor de incidentes y visualización interactiva de siniestros viales</figcaption>
+        </figure>
+        <p>
+          Proyecto académico universitario de extracción, limpieza y análisis integral de datos abiertos sobre siniestros viales en la ciudad de Madrid realizado en equipo. Apliqué técnicas de minería de datos y visualización interactiva para detectar patrones de riesgo y concentración temporal de accidentes. Aprendí a colaborar estrechamente con compañeros y a comunicar conclusiones técnicas mediante dashboards claros y accesibles.
+        </p>
+        <p><strong>Tecnologías y herramientas utilizadas:</strong></p>
+        <ul>
+          <li><strong>Procesamiento y Depuración:</strong> Python (Pandas) para ingestión de datos abiertos, limpieza de nulos y estandarización del histórico municipal.</li>
+          <li><strong>Minería de Datos y Clustering:</strong> Scikit-Learn (K-Means, DBSCAN) para agrupamiento geoespacial de puntos de siniestralidad recurrente.</li>
+          <li><strong>Visualización y Cuadros de Mando:</strong> Power BI y Folium para diseño de mapas de calor GIS y dashboards interactivos para la toma de decisiones.</li>
+        </ul>
+      </article>
+
+      <!-- Proyecto 4: Análisis de Precios de Tesla Model Y -->
+      <article class="proyecto" id="tesla-model-y" data-anio="2024" data-tecnologia="Python">
+        <h3>Análisis de Precios de Tesla Model Y</h3>
+        <figure>
+          <img src="img/proyecto-tesla.jpg" alt="Dashboard de precios de Tesla Model Y" width="1200" height="669" loading="lazy">
+          <figcaption>Web scraping con Selenium, curva de regresión de depreciación y monitorización de precios</figcaption>
+        </figure>
+        <p>
+          Proyecto personal centrado en el análisis del mercado de vehículos de segunda mano del Tesla Model Y para estudiar su curva de depreciación. Mediante un script automatizado con Selenium, realicé web scraping para recopilar los precios de segunda mano de todas las ofertas disponibles, junto con su kilometraje y antigüedad, evaluando cuantitativamente cómo pierde valor este modelo a lo largo del tiempo. Aprendí a automatizar la extracción de datos en sitios web dinámicos, resolver esperas explícitas en el navegador y limpiar y estructurar grandes volúmenes de datos para su posterior análisis.
+        </p>
+        <p><strong>Tecnologías y herramientas utilizadas:</strong></p>
+        <ul>
+          <li><strong>Web Scraping Dinámico:</strong> Python con Selenium WebDriver y esperas explícitas (WebDriverWait) para extraer ofertas en portales SPA.</li>
+          <li><strong>Limpieza y Transformación:</strong> Pandas y Expresiones Regulares (Regex) para parsear precios, kilometrajes, versiones y años de matriculación.</li>
+          <li><strong>Modelado Estadístico de Depreciación:</strong> Statsmodels y Scikit-Learn ajustando modelos de regresión polinomial y exponencial para estimar el valor residual.</li>
+          <li><strong>Visualización de Mercado:</strong> Matplotlib y Seaborn para representar la curva de depreciación y detectar oportunidades por debajo del valor de mercado.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ===============================================================
+         CATEGORÍA 3: INTELIGENCIA ARTIFICIAL Y BIG DATA
+         =============================================================== -->
+    <section id="universidad">
+      <h2>Inteligencia Artificial y Big Data</h2>
+
+      <!-- Proyecto 5: TFG - Detección de Intrusiones con Machine Learning Distribuido y Big Data -->
+      <article class="proyecto" id="tfg-ids-spark" data-anio="2026" data-tecnologia="Apache Spark">
+        <h3>TFG: Detección de Intrusiones con Machine Learning Distribuido y Big Data</h3>
+        <figure>
+          <img src="img/proyecto-tfg.jpg" alt="Dashboard del TFG con Apache Spark" width="1200" height="669" loading="lazy">
+          <figcaption>Procesamiento de flujos de red en tiempo real, pipeline Medallion y curvas ROC (RF vs. GBT)</figcaption>
+        </figure>
+        <p>
+          Trabajo de Fin de Grado en Ingeniería Matemática enfocado en el diseño, implementación y validación experimental de un Sistema de Detección de Intrusiones (IDS) distribuido sobre Apache Spark. El sistema procesa más de 16 millones de flujos del dataset industrial CSE-CIC-IDS 2018 mediante un pipeline MLOps por capas (Bronce, Plata y Oro), aplicando auditoría forense de calidad de datos, reducción de dimensionalidad a 45 variables y modelado multiclase con Random Forest y Gradient Boosted Trees (GBT One-Vs-Rest). Aprendí a optimizar la gestión de memoria y serialización en clústeres HPC locales (mitigando errores OOM), resolver el desbalanceo extremo de clases y analizar los límites físicos de escalabilidad y contención de memoria RAM bajo la Ley de Amdahl.
+        </p>
+        <p><strong>Tecnologías y herramientas utilizadas:</strong></p>
+        <ul>
+          <li><strong>Computación Distribuida y Big Data:</strong> Apache Spark 3.5 y PySpark (Spark SQL y DataFrames) para procesamiento en memoria distribuida de 16M+ registros bajo arquitectura Medallion.</li>
+          <li><strong>Machine Learning Distribuido:</strong> Spark MLlib implementando Random Forest y Gradient Boosted Trees (GBT One-Vs-Rest) con optimización de hiperparámetros.</li>
+          <li><strong>Almacenamiento y Serialización:</strong> Apache Parquet con compresión Snappy y particionamiento eficiente para reducir el I/O en disco.</li>
+          <li><strong>Infraestructura HPC:</strong> Clúster local gestionado con SLURM, optimización de memoria en JVM y mitigación de errores OOM mediante particionado adaptativo.</li>
+        </ul>
+        <p>
+          <a href="https://github.com/edumlg/spark-distributed-ids" target="_blank" rel="noopener">Ver el repositorio de Spark Distributed IDS en GitHub</a>
+        </p>
+      </article>
+
+      <!-- Proyecto 6: Recomendador de Precios de Coches con Deep Learning -->
+      <article class="proyecto" id="recomendador-coches-dl" data-anio="2024" data-tecnologia="TensorFlow">
+        <h3>Recomendador de Precios de Coches de Segunda Mano con Deep Learning</h3>
+        <figure>
+          <img src="img/proyecto-carprice.jpg" alt="App de valoración con Deep Learning" width="1200" height="669" loading="lazy">
+          <figcaption>Predicción de valoración con Deep Learning, intervalos de confianza y análisis SHAP de variables</figcaption>
+        </figure>
+        <p>
+          Proyecto universitario desarrollado en colaboración para la estimación precisa del precio de mercado de vehículos de segunda mano en EE. UU. a partir de múltiples variables técnicas y de estado. El flujo abarca la depuración y estructuración del conjunto de datos, ingeniería de variables con codificación One-Hot y escalado numérico preservado en pipelines Joblib, el diseño y entrenamiento de una red neuronal profunda con Keras y TensorFlow regularizada con L2 y Dropout para prevenir sobreajuste, y la creación de una interfaz web interactiva en Streamlit para inferencia en tiempo real. Aprendí a estructurar pipelines de preprocesamiento reproducibles entre la fase de experimentación y producción, afinar arquitecturas de Deep Learning para regresión continua y desplegar aplicaciones web interactivas orientadas al usuario final.
+        </p>
+        <p><strong>Tecnologías y herramientas utilizadas:</strong></p>
+        <ul>
+          <li><strong>Deep Learning y Redes Neuronales:</strong> TensorFlow y Keras implementando un perceptrón multicapa (MLP) con regularización L2, Dropout y optimizador Adam para regresión.</li>
+          <li><strong>Pipeline de Ingeniería de Características:</strong> Scikit-Learn (OneHotEncoder, StandardScaler, ColumnTransformer) serializado con Joblib para inferencia reproducible.</li>
+          <li><strong>Interpretabilidad del Modelo:</strong> SHAP (SHapley Additive exPlanations) para descomponer la contribución de cada variable técnica al precio final predicho.</li>
+          <li><strong>Despliegue e Interfaz Web:</strong> Streamlit para crear una aplicación interactiva que ejecuta inferencia del modelo en tiempo real para el usuario final.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ===============================================================
+         SECCIÓN: CÓMO TRABAJO
+         =============================================================== -->
+    <section id="como-trabajo">
+      <h2>Cómo trabajo</h2>
+      <ol>
+        <li>
+          <p><strong>Análisis de requisitos y planificación:</strong> Comprender las necesidades del proyecto, definir el alcance y estructurar los objetivos clave.</p>
+        </li>
+        <li>
+          <p><strong>Diseño estructural y arquitectura de información:</strong></p>
+          <ul>
+            <li>Bocetos iniciales en papel o wireframes esquemáticos.</li>
+            <li>Selección de elementos HTML5 semánticos idóneos para cada bloque.</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Desarrollo incremental:</strong> Escritura de código limpio, modular y bien estructurado siguiendo estándares internacionales.</p>
+        </li>
+        <li>
+          <p><strong>Validación y control de calidad:</strong> Verificación con el validador oficial del W3C, comprobación del mapa de encabezados (HeadingsMap) y revisión de accesibilidad.</p>
+        </li>
+        <li>
+          <p><strong>Control de versiones y despliegue:</strong> Registro de cambios mediante Git y publicación en plataformas como GitHub Pages.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===============================================================
+         SECCIÓN: TABLA RESUMEN DE PROYECTOS
+         =============================================================== -->
+    <section id="resumen">
+      <h2>Resumen de Proyectos</h2>
+      <table>
+        <caption>Resumen general de los proyectos desarrollados</caption>
+        <thead>
+          <tr>
+            <th scope="col">Proyecto</th>
+            <th scope="col">Categoría</th>
+            <th scope="col">Año</th>
+            <th scope="col">Tecnología principal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">EcoMap: Plataforma Web</th>
+            <td>Desarrollo Web</td>
+            <td>2024</td>
+            <td>Web / Modelado</td>
+          </tr>
+          <tr>
+            <th scope="row">AeroMap: Potencial Eólico</th>
+            <td>Desarrollo Web</td>
+            <td>2026</td>
+            <td>Deep Learning / Web</td>
+          </tr>
+          <tr>
+            <th scope="row">Open Data: Accidentalidad en Madrid</th>
+            <td>Programación y Análisis de Datos</td>
+            <td>2023</td>
+            <td>Python</td>
+          </tr>
+          <tr>
+            <th scope="row">Análisis de Precios de Tesla Model Y</th>
+            <td>Programación y Análisis de Datos</td>
+            <td>2024</td>
+            <td>Python / Selenium</td>
+          </tr>
+          <tr>
+            <th scope="row">TFG: Detección de Intrusiones con Spark</th>
+            <td>Inteligencia Artificial y Big Data</td>
+            <td>2026</td>
+            <td>Apache Spark / PySpark</td>
+          </tr>
+          <tr>
+            <th scope="row">Recomendador de Precios de Coches</th>
+            <td>Inteligencia Artificial y Big Data</td>
+            <td>2024</td>
+            <td>TensorFlow / Streamlit</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Total: 6 proyectos realizados o en curso</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       PIE DE PÁGINA (Idéntico en todas las páginas)
+       =================================================================== -->
+  <footer>
+    <address>
+      <p>Contacto: <a href="mailto:edu.morillasrodriguez@gmail.com"><svg aria-hidden="true" fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> edu.morillasrodriguez@gmail.com</a></p>
+    </address>
+    <p>
+      <a href="https://github.com/edumlg" target="_blank" rel="noopener"><svg aria-hidden="true" fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> Perfil de GitHub de Eduardo Morillas</a>
+    </p>
+    <p>
+      <a href="https://www.linkedin.com/in/eduardo-m-b5716b252" target="_blank" rel="noopener"><svg aria-hidden="true" fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg> Perfil de LinkedIn de Eduardo Morillas</a>
+    </p>
+    <p>
+      <small>&copy; 2026 Eduardo Morillas Rodríguez. Todos los derechos reservados.</small>
+    </p>
+  </footer>
+
+</body>
+</html>
