@@ -1,0 +1,7 @@
+.cache/
+.gemini/
+*.zip
+*.pdf
+*.docx
+*.odt
+shell.nix
