@@ -91,30 +91,20 @@
     <section id="multimedia">
       <h2>Multimedia</h2>
 
-      <!-- Vídeo local alojado con dos fuentes, poster y track WebVTT accesible -->
-      <article id="video-local">
-        <h3>Vídeo destacado: Geometría y patrones naturales</h3>
-        <video controls width="640" height="360" poster="img/poster.jpg">
-          <source src="media/video.mp4" type="video/mp4">
-          <source src="media/video.webm" type="video/webm">
-          <track src="media/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
-          Tu navegador no soporta la reproducción de este vídeo HTML5.
-        </video>
+      <!-- Vídeo incrustado de YouTube con atributo title accesible según enunciado -->
+      <article id="video-destacado">
+        <h3>Serie de referencia: Mr. Robot (Temporada 1)</h3>
+        <p>Tráiler oficial de una de mis series de referencia sobre ciberseguridad, arquitectura de sistemas y privacidad digital.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xIBiJ_SzJTA" title="Tráiler oficial de la primera temporada de Mr. Robot - Serie sobre ciberseguridad y computación"></iframe>
       </article>
 
-      <!-- Vídeo incrustado de YouTube representativo con atributo title -->
-      <article id="video-youtube">
-        <h3>Vídeo complementario: Fundamentos de Redes Neuronales</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/aircAruvnKk" title="Conferencia de Grant Sanderson sobre cómo aprenden las Redes Neuronales y el Deep Learning"></iframe>
-      </article>
-
-      <!-- Audio libre de derechos con controles, título y artista -->
+      <!-- Audio libre de derechos con controles, título y artista (opcional según enunciado) -->
       <article id="audio-cancion">
-        <h3>Pista de audio recomendada</h3>
+        <h3>Banda sonora recomendada</h3>
         <audio controls src="media/audio.mp3">
           Tu navegador no soporta el elemento de audio HTML5.
         </audio>
-        <p>Título: <em>Creative Ambient Theme</em> &mdash; Artista: <em>Bensound / Free Music Archive</em> (Música libre de derechos bajo licencia Creative Commons).</p>
+        <p>Título: <em>Synthwave &amp; Ambient Computing</em> &mdash; Artista: <em>Creative Commons Library</em> (Música libre de derechos bajo licencia CC0).</p>
       </article>
     </section>
 

@@ -34,7 +34,7 @@ El sitio web está compuesto por cuatro páginas HTML5 semánticas, accesibles e
 4. **`sobre-mi.html` (Sobre mí):**
    - Sección *«Mi trayectoria»*: relato narrativo en dos párrafos sobre la vocación matemática e informática y cita inspiradora en `<blockquote cite="...">` con atribución.
    - Sección *«Línea de tiempo»*: lista cronológica ordenada (`<ol>`) con cinco hitos fundamentales fechados con `<time datetime="...">`.
-   - Sección *«Multimedia»*: reproductor nativo `<video>` con doble fuente (MP4 y WebM), carátula `poster` y subtítulos descriptivos WebVTT (`<track>`), complementado con vídeo de YouTube con atributo `title` y pista musical `<audio controls>`.
+   - Sección *«Multimedia»*: vídeo representativo incrustado de YouTube con atributo `title` descriptivo (tráiler oficial de la serie *Mr. Robot*, referente en ciberseguridad e ingeniería) y reproductor musical `<audio controls>` con título y autor.
    - Sección *«Preguntas frecuentes»*: acordeón interactivo sin JavaScript mediante cinco elementos `<details>` con `<summary>`, el primero configurado con apertura por defecto (`open`).
    - Sección *«Nivel»*: indicadores de competencia cuantitativa mediante tres elementos `<meter>` con etiquetas accesibles asociadas.
 
@@ -51,7 +51,5 @@ El sitio web está compuesto por cuatro páginas HTML5 semánticas, accesibles e
 
 ## 🎵 Fuentes Multimedia y Licencias
 
-- **Vídeo local (`media/video.mp4`, `media/video.webm`):** Recurso de dominio público (Creative Commons Zero / MDN Web Docs sample), grabado a 720p. Representa la geometría y dinamismo botánico en alta definición.
-- **Subtítulos WebVTT (`media/subtitulos.vtt`):** Pista descriptiva original de 5 bloques temporales accesible para personas con discapacidad auditiva.
-- **Vídeo incrustado (YouTube):** *«But what is a neural network? | Deep learning, chapter 1»* por Grant Sanderson (3Blue1Brown), recurso educativo abierto sobre computación y redes neuronales.
-- **Audio local (`media/audio.mp3`):** *«Creative Ambient Theme»*, música libre de derechos distribuida bajo licencia Creative Commons (Free Music Archive / Wikimedia Commons).
+- **Vídeo incrustado (YouTube):** Tráiler oficial de la primera temporada de *Mr. Robot* (USA Network / Universal Cable Productions), recurso audiovisual sobre ciberseguridad, arquitectura de sistemas y tecnología, incrustado mediante `<iframe>` con atributo `title` accesible.
+- **Audio local (`media/audio.mp3`):** *«Synthwave & Ambient Computing»*, pista instrumental libre de derechos distribuida bajo licencia Creative Commons Zero / CC0 (Free Music Archive / Wikimedia Commons).
