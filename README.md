@@ -52,4 +52,4 @@ El sitio web está compuesto por cuatro páginas HTML5 semánticas, accesibles e
 ## 🎵 Fuentes Multimedia y Licencias
 
 - **Vídeo incrustado (YouTube):** Tráiler oficial de la primera temporada de *Mr. Robot* (USA Network / Universal Cable Productions), recurso audiovisual sobre ciberseguridad, arquitectura de sistemas y tecnología, incrustado mediante `<iframe>` con atributo `title` accesible.
-- **Audio local (`media/audio.mp3`):** *«Synthwave & Ambient Computing»*, pista instrumental libre de derechos distribuida bajo licencia Creative Commons Zero / CC0 (Free Music Archive / Wikimedia Commons).
+- **Audio local (`media/audio.mp3`):** *«Down Under»* por Men at Work (álbum *Business as Usual*, 1981, CBS / Columbia Records), tema musical representativo en reproductor `<audio controls>` con indicación de título y artista.
