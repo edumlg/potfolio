@@ -4,8 +4,7 @@ Este repositorio contiene el código fuente completo del sitio web de portfolio 
 
 - **Autor:** Eduardo Morillas Rodríguez
 - **Especialización:** Machine Learning Systems, Large Language Models (LLMs) & Big Data
-- **URL Pública (GitHub Pages):** [https://edumlg.github.io/](https://edumlg.github.io/)
-- **URL alternativa de repositorio:** [https://edumlg.github.io/portfolio/](https://edumlg.github.io/portfolio/)
+- **URL Pública (GitHub Pages):** [https://edumlg.github.io/potfolio/](https://edumlg.github.io/potfolio/)
 
 ---
 
