@@ -98,10 +98,11 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/xIBiJ_SzJTA" title="Tráiler oficial de la primera temporada de Mr. Robot - Serie sobre ciberseguridad y computación"></iframe>
       </article>
 
-      <!-- Canción favorita con controles, título y artista (opcional según enunciado) -->
+      <!-- Canción favorita con controles, fuente MIME estándar y título/artista -->
       <article id="audio-cancion">
         <h3>Canción favorita</h3>
-        <audio controls src="media/audio.mp3">
+        <audio controls preload="metadata">
+          <source src="media/audio.mp3" type="audio/mpeg">
           Tu navegador no soporta el elemento de audio HTML5.
         </audio>
         <p>Título: <em>Down Under</em> &mdash; Artista: <em>Men at Work</em> (Álbum: <em>Business as Usual</em>, 1981).</p>
